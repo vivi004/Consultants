@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../Css/ConsultantFormPage.css'; // Assuming ConsultantFormPage.css is located in the correct directory
-
+import axios from 'axios';
+import '../Css/ConsultantFormPage.css';
 const ConsultantFormPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -37,14 +37,25 @@ const ConsultantFormPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form data submitted:', formData);
-    // Reset the form after submission (optional)
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      country: '',
-      message: ''
-    });
+
+    // Replace with your actual API endpoint
+    axios.post('https://sheet.best/api/sheets/12283d44-281f-42f8-8bd6-ba8e0900e285', formData)
+      .then(response => {
+        console.log('Response:', response);
+        // Optionally reset form fields after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          country: '',
+          message: ''
+        });
+        alert('Form submitted successfully!');
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        alert('An error occurred while submitting the form.');
+      });
   };
 
   return (
