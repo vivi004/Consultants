@@ -1,0 +1,52 @@
+
+  .login-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+
+  
+.page-contents {
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin: 70px auto; /* Center horizontally */
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: #03b639;
+  box-shadow: 80%;
+  height: max-content;
+  width: max-content;
+  padding: 20px;
+  background: #00F260;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+  
+.login-form label {
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+.login-button, .submit-button {
+  background-color: #0f3cb9; /* Blue-green color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Medium font size */
+  border-radius: 40px;
+}
+
+.login-button:hover,.submit-button:hover {
+  background-color: #30ee69; /* Darker shade of blue-green */
+}
+

@@ -1,0 +1,110 @@
+/* Consultant Form Page */
+.consultant-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #1fd84d;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #1A2980;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+  
+  
+  .page-contents1 {
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin: 130px auto; /* Center horizontally */
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 80%;
+    height: 650px;
+    width: fit-content;
+    padding: 20px;
+    background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+  .consultant-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .consultant-form input[type="text"],
+  .consultant-form input[type="email"],
+  .consultant-form input[type="tel"],
+  .consultant-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #46cc11;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .consultant-form textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+  
+  .consultant-form button[type="submit"] {
+    background-color: #0f3cb9; /* Blue-green color */
+    color: rgb(34, 5, 5);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .consultant-form button[type="submit"]:hover {
+    background-color: #03b639; /* Darker shade of blue-green */
+  }
+  
+  .consultant-form select {
+    /* Existing styles */
+    margin-bottom: 16px; /* Add margin bottom */
+  }
+  
+  .consultant-form textarea {
+    /* Existing styles */
+    margin-bottom: 16px; /* Add margin bottom */
+  }
+  
+  
+/* Form styles */
+ .consultant-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  
+consultant-form label {
+  margin-bottom: 5px;
+}
+
+ .consultant-form input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+.submit-button {
+  background-color: #0f3cb9; /* Blue-green color */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Medium font size */
+  border-radius: 40px;
+  color: aliceblue;
+}
+
+.submit-button:hover {
+  background-color: #07f04d; /* Darker shade of blue-green */
+}
+
