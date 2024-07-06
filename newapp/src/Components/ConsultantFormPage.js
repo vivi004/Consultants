@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import MainNav from './MainNav';
 import '../Css/ConsultantFormPage.css';
 
 const ConsultantFormPage = () => {
@@ -70,6 +71,7 @@ const ConsultantFormPage = () => {
 
   return (
     <div className="page-contents1">
+    <MainNav/>
       <h1>Consultant Form</h1>
       <form className="consultant-form" onSubmit={handleSubmit}>
         {/* Form fields for consultant form */}

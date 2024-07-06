@@ -1,19 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom'; // Import NavLink instead of Link
 import '../Css/Navbar.css';
+import { Target } from 'lucide-react';
+
 const Navbar = ({ isLoggedIn }) => {
   return (
-    
     <nav className="navbar">
       <div className="navbar-title">
-        <span className="blue-text title-text">BLUESTONE</span> <span className="green-text title-text">OVERSEAS CONSULTANTS</span>
+      <span className="blue-text title-text">BLUESTONE</span>{' '}
+        <span className="green-text title-text">OVERSEAS CONSULTANTS</span>
       </div>
-      <ul className="navbar-nav">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/consultantform">Our Services</Link></li>
-        <li><Link to="/consultantform">About Us</Link></li>
-        <li><Link to="/login">Login</Link></li>
-      </ul>
+
+      <div className="lin">
+      <Link to="/">
+      <button>Home</button>
+      </Link>
+      
+      
+      <Link to="/login">
+      <button>Help</button>
+      </Link>
+      
+      <Link to="/login">
+      <button>Login</button>
+      </Link>
+      
+      <Link to="/signup">
+      <button>Sign Up</button>
+      </Link>
+      </div>
+      
     </nav>
   );
 }

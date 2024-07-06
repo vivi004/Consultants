@@ -1,6 +1,6 @@
 import React from 'react';
+import Navbar from './Navbar';
 import '../Css/HomePage.css'; // Import your CSS file for styling
-
 const HomePage = () => {
   // Sample data for ads or additional content
   const ads = [
@@ -22,6 +22,8 @@ const HomePage = () => {
 
   return (
     <div className="green">
+    <Navbar/>
+
       <p>Welcome to OVERSEAS Consultant</p>
 
       <div className="ads-container">

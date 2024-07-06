@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../Css/LoginPage.css';
 import axios from 'axios';
+import Navbar from './Navbar';
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -40,6 +41,7 @@ const LoginPage = () => {
 
   return (
     <div className="page-contents">
+    <Navbar/>
       <h1 style={{ textAlign: 'center' }}>Login</h1>
       <form className="login-form" onSubmit={handleSubmit}>
         <label>Username:</label>
@@ -48,8 +50,8 @@ const LoginPage = () => {
         <input type="password" name="password" value={formData.password} onChange={handleChange} required />
         
         <div className="form-button-container">
-        <Link to="/consultantform" style={{ textDecoration: 'none', display: 'flex', justifyContent: 'center' }}>
-          <button className="login-button" o>Login</button>
+        <Link to="/mainpage" style={{ textDecoration: 'none', display: 'flex', justifyContent: 'center' }}>
+          <button className="login-button" >Login</button>
         </Link>
       </div>
 

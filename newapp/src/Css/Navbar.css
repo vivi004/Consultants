@@ -1,23 +1,23 @@
 
   .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000; /* Ensure the navbar appears above other content */
-    background: #acb6e5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5%;
+  display: flex;
+  justify-content: space-between; /* Align items horizontally with space between */
+  align-items: center;
+  z-index: 1000; /* Ensure the navbar appears above other content */
+  background: #acb6e5;
+  background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
+  background: linear-gradient(to right, #86fde8, #acb6e5);
   }
   
   .page-content {
     padding-top: 70px; /* Add padding-top to page content to prevent content from being covered by fixed navbar */
     background-color: rgb(144, 150, 212);
+
   }
   
 
@@ -25,6 +25,7 @@ background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, F
   .navbar-title {
     display: flex;
     align-items: center;
+    gap: 1rem;
   }
   
   .title-text {
@@ -44,6 +45,7 @@ background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, F
     list-style-type: none;
     display: flex;
     margin: 0;
+    gap: 2rem;
     padding: 0;
   }
   
@@ -67,3 +69,47 @@ background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, F
   }
   
   
+  /* Navbar.css */
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.navbar-nav li a {
+  text-decoration: none;
+  color: black; /* Default color */
+}
+
+.navbar-nav li a.active {
+  color: red; /* Color for active links */
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  background: #315cfd;
+  color: white;
+  font-size: 1em;
+}
+
+.lin{
+  align-items: end;
+  display: flex;
+  gap: 2rem;
+}

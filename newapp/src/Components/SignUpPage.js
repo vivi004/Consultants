@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Css/SignUpPage.css'
+import Navbar from './Navbar';
 const SignUpPage = () => {
   return (
     <div className="page-contents">
+    <Navbar/>
       <h1 style={{ textAlign: 'center' }}>Sign Up</h1>
       <form className="signup-form">
         {/* Form fields for sign up */}
