@@ -1,18 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Css/Navbar.css';
-import { Focus } from 'lucide-react';
-
+import logo from "../Assets/Images/logo.jpg";
 const MainNav = ({ isLoggedIn }) => {
   return (
     <nav className="navbar">
-    <div className="navbar-title">
-    <Focus color="black"/>
-
-      <span className="blue-text title-text">BLUESTONE</span>{' '}
-      <span className="green-text title-text">OVERSEAS CONSULTANTS</span>
-    </div>
-
+    <img src={logo} className="logo" alt="Logo" height="70px" width="700px" />
     <div className="lin">
     <Link to="/">
     <button>Courses</button>
