@@ -6,6 +6,12 @@
   margin: 80px;
   border-radius: 8px;
   text-align: center;
+
+
+}
+.green.sidebar-open {
+  margin-left: 250px; /* Adjust based on your sidebar width */
+  transition: margin-left 0.3s ease-in-out;
 }
 
 .ads-container {
@@ -56,3 +62,4 @@
 .ad-item a:hover {
   background-color: #0056b3;
 }
+
