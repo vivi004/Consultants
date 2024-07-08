@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Css/Navbar.css';
+import { Focus } from 'lucide-react';
+
 const MainNav = ({ isLoggedIn }) => {
   return (
     <nav className="navbar">
     <div className="navbar-title">
+    <Focus color="black"/>
+
       <span className="blue-text title-text">BLUESTONE</span>{' '}
       <span className="green-text title-text">OVERSEAS CONSULTANTS</span>
     </div>

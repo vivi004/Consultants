@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import { NavLink } from 'react-router-dom'; // Import NavLink instead of Link
 import '../Css/Navbar.css';
-import { Target } from 'lucide-react';
+import { Focus } from 'lucide-react';
 
 const Navbar = ({ isLoggedIn }) => {
   return (
     <nav className="navbar">
       <div className="navbar-title">
+      <Focus color="black"/>
       <span className="blue-text title-text">BLUESTONE</span>{' '}
         <span className="green-text title-text">OVERSEAS CONSULTANTS</span>
       </div>
