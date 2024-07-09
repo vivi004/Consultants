@@ -1,6 +1,5 @@
 
   .navbar {
-    position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -25,26 +24,7 @@
   }
 
   
-  .navbar-title {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .title-text {
-    font-size: 24px; /* Adjust font size as needed */
-    font-weight: bold;
-  }
-  
-  .blue-text {
-    color: #0f3cb9; /* Dark blue */
-  }
-  
-  .green-text {
-    color: #03b639; /* Light green */
-  }
-  
-  .navbar ul.navbar-nav {
+r ul.navbar-nav {
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -103,6 +83,7 @@ button {
   font-size: 1.2em;
   font-weight: 550;
   font-family: 'Montserrat', sans-serif;
+  opacity: 0.7;
 }
 
 button:hover {
@@ -153,4 +134,5 @@ button:hover {
 .sidebar-content {
   padding: 20px;
 }
+
 

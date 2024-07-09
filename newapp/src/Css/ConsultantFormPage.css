@@ -109,3 +109,7 @@ consultant-form label {
   background-color: #07f04d; /* Darker shade of blue-green */
 }
 
+.but{
+  display: flex;
+  gap: 1rem;
+}

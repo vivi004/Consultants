@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import MainNav from './MainNav';
+import { Link } from 'react-router-dom';
+
 import '../Css/ConsultantFormPage.css';
 
 const ConsultantFormPage = () => {
@@ -71,7 +72,6 @@ const ConsultantFormPage = () => {
 
   return (
     <div className="page-contents1">
-    <MainNav/>
       <h1>Consultant Form</h1>
       <form className="consultant-form" onSubmit={handleSubmit}>
         {/* Form fields for consultant form */}
@@ -93,8 +93,10 @@ const ConsultantFormPage = () => {
         
         <label>Messages:</label>
         <textarea name="message" value={formData.message} onChange={handleChange} rows={4} />
-
+        <div className='but'>
+       <Link to="/mainpage"> <button type="submit" >BACK</button></Link>
         <button type="submit" className="submit-button">Submit</button>
+ </div>
       </form>
     </div>
   );

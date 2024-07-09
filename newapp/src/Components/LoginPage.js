@@ -40,8 +40,9 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="page-contents">
+    <div>
     <Navbar/>
+    <div className="page-contents">
       <h1 style={{ textAlign: 'center' }}>Login</h1>
       <form className="login-form" onSubmit={handleSubmit}>
         <label>Username:</label>
@@ -61,6 +62,7 @@ const LoginPage = () => {
           Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
       </div>
+    </div>
     </div>
   );
 }

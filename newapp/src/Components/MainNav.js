@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Css/Navbar.css';
+import '../Css/MainNav.css';
 import logo from "../Assets/Images/logo.jpg";
 const MainNav = ({ isLoggedIn }) => {
   return (
-    <nav className="navbar">
+    <nav className="mnavbar">
     <img src={logo} className="logo" alt="Logo" height="70px" width="700px" />
-    <div className="lin">
+    <div className="mlin">
     <Link to="/">
     <button>Courses</button>
     </Link>
