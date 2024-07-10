@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",  // Specifies that we are launching Chrome
+            "request": "launch",  // Specifies that we are launching (as opposed to attaching)
+            "name": "Launch Chrome against localhost",  // Name of this configuration
+            "url": "http://localhost:8080",  // URL of the web application running on localhost
+            "webRoot": "${workspaceFolder}"  // Root directory of the workspace
+        }
+    ]
+}
