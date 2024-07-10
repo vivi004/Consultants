@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';  // Import Carousel from react-bootstrap
 import Navbar from './Navbar';
+import Footer from './Footer';
 import '../Css/HomePage.css'; // Import your CSS file for styling
 import top from '../Assets/Images/top.jpg'
 import image1 from '../Assets/Images/two.png';
@@ -39,6 +40,10 @@ const HomePage = () => {
           <img src={i3} alt="none" style={{ width: '100%', height: '90vh' }} />
         </Carousel.Item>
       </Carousel>
+
+<Footer/>
+
+
     </>
   );
 }
