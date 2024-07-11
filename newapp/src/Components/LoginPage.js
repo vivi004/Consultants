@@ -52,7 +52,9 @@ const LoginPage = () => {
         
         <div className="form-button-container">
         <Link to="/mainpage" style={{ textDecoration: 'none', display: 'flex', justifyContent: 'center' }}>
-          <button className="login-button" >Login</button>
+          <button className="login-button" >
+          Login</button>
+          
         </Link>
       </div>
 

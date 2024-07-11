@@ -12,7 +12,7 @@ const MainNav = ({ isLoggedIn }) => {
     </Link>
     
     
-    <Link to="/">
+    <Link to="/aboutpage">
     <button>About</button>
     </Link>
     

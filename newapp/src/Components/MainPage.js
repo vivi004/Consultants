@@ -1,19 +1,17 @@
 import React from 'react';
 import MainNav from './MainNav';
-import '../Css/HomePage.css'; // Import your CSS file for styling
+import '../Css/MainPage.css'; // Import your CSS file for styling
 const MainPage = () => {
  
   
 
   return (
-    <div className="green">
+    <>
     <MainNav/>
-
-    
-    
-    
+    <div className="green">    
     <h1>Welcome to OVERSEAS Consultant</h1>
     </div>
+    </>
 );
 }
 

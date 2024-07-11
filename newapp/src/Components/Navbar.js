@@ -15,7 +15,7 @@ const Navbar = ({ isLoggedIn }) => {
       </Link>
       
       
-      <Link to="/login">
+      <Link to="/helppage">
       <button>Help</button>
       </Link>
       

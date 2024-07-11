@@ -20,7 +20,7 @@ background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, F
     padding: 20px;
     border-radius: 50px;
     box-shadow: 80%;
-    height: 650px;
+    height: 700px;
     width: fit-content;
     padding: 20px;
     background: #00c6ff;  /* fallback for old browsers */
@@ -106,7 +106,7 @@ consultant-form label {
 }
 
 .submit-button:hover {
-  background-color: #07f04d; /* Darker shade of blue-green */
+  background-color: #2deb3d; /* Darker shade of blue-green */
 }
 
 .but{
